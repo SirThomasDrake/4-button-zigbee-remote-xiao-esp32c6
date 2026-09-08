@@ -90,7 +90,7 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
 
   Hold/dim:
 
-    triggers:
+   triggers:
   - trigger: event
     event_type: zha_event
     event_data:
