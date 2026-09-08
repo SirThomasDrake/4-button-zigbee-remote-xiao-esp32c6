@@ -80,25 +80,25 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
 
 4. Use it in YAML for your automations
 
-    triggers:
-  - trigger: event
-    event_type: zha_event
-    event_data:
-      device_ieee: xx:xx:xx:xx:xx:xx:xx:xx   # your IEEE
-      endpoint_id: 1
-      command: toggle
+ //  triggers:
+ // - trigger: event
+ //   event_type: zha_event
+ //   event_data:
+ //     device_ieee: xx:xx:xx:xx:xx:xx:xx:xx   # your IEEE
+ //     endpoint_id: 1
+ //     command: toggle
 
   Hold/dim:
 
-   triggers:
-  - trigger: event
-    event_type: zha_event
-    event_data:
-      device_ieee: 10:bd:a3:ff:fe:a0:54:74
-      endpoint_id: 1
-      command: step
-      params:
-        step_mode: 0   # 0 up, 1 down
+// triggers:
+//  - trigger: event
+//    event_type: zha_event
+//    event_data:
+//      device_ieee: xx:xx:xx:xx:xx:xx:xx:xx   # your IEEE
+//      endpoint_id: 1
+//      command: step
+//      params:
+//        step_mode: 0   # 0 up, 1 down
 
     After a factory reset or a new board, listen again. device_ieee changes per chip. device_id changes if you remove the device from ZHA and pair it again. (Recommend using device_ieee for all automations)
 
