@@ -4,6 +4,8 @@ Battery-powered Zigbee 3.0 end device for Home Assistant (ZHA).
 
 Deep Sleep with wake on any GPIO to low or with motion.
 
+Motion wake uses ADXL345 INT1 on GPIO5 (MTDI). Hold BOOT if the board will not enter download mode.
+
 
 Each button has 3 actions:
 
