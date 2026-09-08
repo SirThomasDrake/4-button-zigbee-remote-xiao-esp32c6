@@ -80,7 +80,7 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
 
 4. Use it in YAML for your automations
 
-   triggers:
+    triggers:
   - trigger: event
     event_type: zha_event
     event_data:
