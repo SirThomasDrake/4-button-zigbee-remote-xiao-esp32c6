@@ -19,7 +19,7 @@ Motion / tap (endpoint 5, manufacturer model `Motion`):
 
 Map those events in Home Assistant automations. See below.
 
-Wiring: [wiring-instructions.md](wiring-instructions.md)
+### Wiring: [wiring-instructions.md](wiring-instructions.md)
 
 ## Arduino IDE
 
@@ -50,11 +50,11 @@ Example button config:
 
 -----------------------------------------------
 
-*Capture ZHA events (MAC / IEEE for automations)
+## *Capture ZHA events (MAC / IEEE for automations)
 
 The remote does not expose a separate entity for every gesture. Home Assistant sees zha_event. You need the device IEEE (MAC) and endpoint from that event.
 
-1. Listen
+### 1. Listen
 
    Home Assistant → Developer tools → Events
    
@@ -66,7 +66,7 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
    
    Press each button on the remote (single, double, hold)
 
-2. Read the payload
+### 2. Read the payload
 
    short press looks like this:
 
@@ -114,7 +114,7 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
  
    attribute_updated is the cluster echoing state. Prefer toggle / on / step as triggers so you do not fire twice.
 
-4. Map buttons to endpoints
+### 3. Map buttons to endpoints
 
    Match endpoint_id to the GPIO you wired:
 
@@ -127,7 +127,7 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
 
    Confirm by pressing one button at a time while listening.
 
-5. Use it in YAML for your automations
+### 4. Use it in YAML for your automations
 
    Single press
 
@@ -153,7 +153,7 @@ The remote does not expose a separate entity for every gesture. Home Assistant s
 
    After a factory reset or a new board, listen again. device_ieee changes per chip. device_id changes if you remove the device from ZHA and pair it again. (Recommend using device_ieee for all automations)
 
-6.  If nothing appears
+### 5.  If nothing appears
    
    •   Restart Home Assistant if a previous interview got stuck.
    •   Serial on the C6 should print the button press. If Serial is silent, the event will not fire either.
