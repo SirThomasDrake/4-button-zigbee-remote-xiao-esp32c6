@@ -117,9 +117,9 @@ Star them at the TP4056 OUT− or the XIAO GND pad.
 
 ## 7. What not to do
 
-    - No 5 V on BAT+.
-    - Do not leave a button pin open with no pull-up — it will float, wake the chip, and look “stuck.”
-    - Charge the pouch through the TP4056. The XIAO USB-C is for programming.
+* No 5 V on BAT+.
+* Do not leave a button pin open with no pull-up — it will float, wake the chip, and look “stuck.”
+* Charge the pouch through the TP4056. The XIAO USB-C is for programming.
 
 ---
 
