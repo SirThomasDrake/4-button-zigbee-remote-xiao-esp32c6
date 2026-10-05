@@ -1,4 +1,5 @@
 # 4-button Zigbee remote (XIAO ESP32-C6)
+<img width="835" height="630" alt="IMG_0698" src="https://github.com/user-attachments/assets/00ced47e-aa8b-4bde-9cfc-6f68b176e5c5" />
 
 Battery-powered Zigbee 3.0 **end device** for Home Assistant **ZHA**.
 
